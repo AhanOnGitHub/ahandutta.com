@@ -1,0 +1,192 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('fonts/CaviarDreams.ttf') format('truetype');
+  font-display: swap;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 110px; /* offset for the fixed header */
+  background: url('textures/background.jpg') no-repeat fixed 20% 90%;
+  background-size: cover;
+  font-family: 'Mozilla Text', sans-serif;
+}
+
+.body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+  hyphens: auto;
+  word-spacing: 0.02em;
+  z-index: 1;
+}
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container to center logo */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+/* Logo Link */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Image */
+.logo {
+  height: 35px;
+}
+
+/* Logo Image */
+.logo-img {
+  height: 42px;
+  width: auto;
+}
+
+/* Responsive Logo Size */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 28px;
+  }
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 110px;         /* Height of header */
+  padding-bottom: 185px;      /* Space for social buttons */
+  min-height: calc(100vh - 110px); /* Prevents collapsing when content is short */
+}
+.body h1 {
+  font-size: 6.3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+
+.body p {
+  font-size: 2rem;
+  text-align: justify;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  text-indent: 2em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .body {
+    margin-top: 140px;
+    max-width: 90%;
+  }
+
+  .body h1 {
+    font-size: 2rem;
+  }
+
+  .body p {
+    font-size: 1rem;
+  }
+}
+.social-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 1001;
+}
+
+.social-btn {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  color: #000;
+  border-radius: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  padding: 0;
+  font-size: 24px;
+  transition: 
+    color 0.2s ease,
+    background-color 0.2s ease;
+  /* NO transform transition */
+}
+
+/* SVG or image inside the button */
+.social-btn svg,
+.social-btn img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  pointer-events: none;
+}
+
+/* Hover: invert colors only, no transform */
+.social-btn:hover,
+.social-btn:focus {
+  background-color: #000;
+  color: #fff;
+  outline: none;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 100%;
+  padding: 0;
+  background: #f3f3f3;
+  color: #000000;
+  font: 800 1.1rem 'CaviarDreams', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  border: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #000;
+  color: #ffffff;
+}
