@@ -10,10 +10,7 @@
   src: url('fonts/CaviarDreams.ttf') format('truetype');
   font-display: swap;
 }
-html, body {
-  overflow: hidden;
-  height: 100%;
-}
+
 body {
   display: flex;
   flex-direction: column;
@@ -73,7 +70,7 @@ body {
 
 /* Logo image styling */
 .logo {
-  height: 35px; /* Desktop size */
+  height: 35px;
   width: auto;
 }
 
@@ -183,49 +180,4 @@ body {
     height: 70px;
   }
 
-  /* Smaller logo for mobile */
-  .logo {
-    height: 40px;
-  }
-
-  /* Limit mobile logo max width to avoid stretching */
-  .logo-link picture img {
-    max-width: 140px;
-  }
-
-  /* Adjust nav button */
-  .nav-btn {
-    width: auto;
-    padding: 0 1rem;
-    font-size: 0.9rem;
-    height: 70px;
-  }
-
-  /* Adjust content spacing */
-  .content {
-    padding-top: 70px;
-    padding-bottom: 120px;
-  }
-
-  /* Smaller headings & text */
-  .body h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .body p {
-    font-size: 1rem;
-    text-indent: 1em;
-  }
-
-  /* Smaller social buttons */
-  .social-btn {
-    width: 40px;
-    height: 40px;
-  }
-
-  .social-btn svg {
-    width: 20px;
-    height: 20px;
-  }
-}
+  /
