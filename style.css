@@ -201,10 +201,18 @@ body {
     height: 70px;
   }
 
-  /* Adjust content spacing */
+  /* Fix vertical centering */
   .content {
-    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+    padding-top: 0;
     padding-bottom: 120px;
+  }
+
+  .body {
+    margin-top: 0;
   }
 
   /* Smaller headings & text */
