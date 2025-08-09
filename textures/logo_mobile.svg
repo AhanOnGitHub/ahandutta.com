@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="307.02228mm"
+   height="34.65057mm"
+   viewBox="0 0 1160.3991 130.96278"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="logo_mobile.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0822325"
+     inkscape:cx="569.65577"
+     inkscape:cy="1.3860238"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="1160.399"
+       height="130.96278"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="24.588005"
+       y="22.620964"
+       width="731.73901"
+       height="433.73239"
+       id="rect1" />
+  </defs>
+  <g
+     id="layer1"
+     transform="matrix(1.0982542,0,0,1.0982542,-30.530135,-39.194643)"
+     style="fill:#000000;fill-opacity:1">
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-weight:bold;font-size:96px;font-family:'Caviar Dreams';-inkscape-font-specification:'Caviar Dreams Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);fill:#000000;fill-opacity:1"
+       transform="matrix(1.5204523,0,0,1.5113054,-15.846349,-19.711966)"><tspan
+         x="24.587891"
+         y="113.55223"
+         id="tspan1">ad.c</tspan></text>
+  </g>
+</svg>

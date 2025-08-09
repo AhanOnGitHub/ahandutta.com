@@ -4,17 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: 'CaviarDreams';
   src: url('fonts/CaviarDreams.ttf') format('truetype');
   font-display: swap;
+}
+html, body {
+  overflow: hidden;
+  height: 100%;
 }
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding-top: 110px; /* offset for the fixed header */
+  padding-top: 110px; /* offset for fixed header */
   background: url('textures/background.jpg') no-repeat fixed 20% 90%;
   background-size: cover;
   font-family: 'Mozilla Text', sans-serif;
@@ -54,44 +59,40 @@ body {
   align-items: stretch;
   height: 100%;
 }
-/* Logo Link */
+
+/* Logo link & picture wrapper */
 .logo-link {
   display: flex;
   align-items: center;
 }
 
-/* Logo Image */
-.logo {
-  height: 35px;
+.logo-link picture {
+  display: flex;
+  align-items: center;
 }
 
-/* Logo Image */
-.logo-img {
-  height: 42px;
+/* Logo image styling */
+.logo {
+  height: 35px; /* Desktop size */
   width: auto;
 }
 
-/* Responsive Logo Size */
-@media (max-width: 768px) {
-  .logo-img {
-    height: 28px;
-  }
-}
+/* Content and text */
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 110px;         /* Height of header */
-  padding-bottom: 185px;      /* Space for social buttons */
-  min-height: calc(100vh - 110px); /* Prevents collapsing when content is short */
+  padding-top: 110px;      /* height of header */
+  padding-bottom: 185px;   /* space for social buttons */
+  min-height: calc(100vh - 110px);
 }
+
 .body h1 {
   font-size: 6.3rem;
   text-align: center;
   margin-bottom: 0.5rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-  display: block;
 }
 
 .body p {
@@ -101,21 +102,7 @@ body {
   text-indent: 2em;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .body {
-    margin-top: 140px;
-    max-width: 90%;
-  }
-
-  .body h1 {
-    font-size: 2rem;
-  }
-
-  .body p {
-    font-size: 1rem;
-  }
-}
+/* Social buttons */
 .social-buttons {
   position: fixed;
   bottom: 20px;
@@ -140,13 +127,9 @@ body {
   box-shadow: none;
   padding: 0;
   font-size: 24px;
-  transition: 
-    color 0.2s ease,
-    background-color 0.2s ease;
-  /* NO transform transition */
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-/* SVG or image inside the button */
 .social-btn svg,
 .social-btn img {
   width: 24px;
@@ -155,13 +138,14 @@ body {
   pointer-events: none;
 }
 
-/* Hover: invert colors only, no transform */
 .social-btn:hover,
 .social-btn:focus {
   background-color: #000;
   color: #fff;
   outline: none;
 }
+
+/* Navigation */
 .nav-links {
   display: flex;
   list-style: none;
@@ -189,4 +173,59 @@ body {
 .nav-btn:hover {
   background-color: #000;
   color: #ffffff;
+}
+
+/* ==================== */
+/* Mobile responsive */
+@media (max-width: 768px) {
+  /* Smaller header */
+  .top-header {
+    height: 70px;
+  }
+
+  /* Smaller logo for mobile */
+  .logo {
+    height: 40px;
+  }
+
+  /* Limit mobile logo max width to avoid stretching */
+  .logo-link picture img {
+    max-width: 140px;
+  }
+
+  /* Adjust nav button */
+  .nav-btn {
+    width: auto;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    height: 70px;
+  }
+
+  /* Adjust content spacing */
+  .content {
+    padding-top: 70px;
+    padding-bottom: 120px;
+  }
+
+  /* Smaller headings & text */
+  .body h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .body p {
+    font-size: 1rem;
+    text-indent: 1em;
+  }
+
+  /* Smaller social buttons */
+  .social-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-btn svg {
+    width: 20px;
+    height: 20px;
+  }
 }
